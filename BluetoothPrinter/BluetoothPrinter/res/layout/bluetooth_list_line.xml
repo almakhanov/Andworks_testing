@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Rly_detail_item"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+    <TextView android:id="@+id/tv_bluetooth_device_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/list_item_text"
+        android:textColor="@color/list_item_text"
+        android:hint="设备名称">
+    </TextView>
+    <TextView android:id="@+id/tv_bluetooth_match_state"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/list_item_text"
+        android:textColor="@color/list_item_text"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:hint="匹配状态">
+    </TextView>
+    <TextView android:id="@+id/tv_bluetooth_addr"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/list_item_text"
+        android:textColor="@color/list_item_text"
+        android:layout_below="@id/tv_bluetooth_device_name"
+        android:hint="蓝牙地址">
+    </TextView>
+</RelativeLayout>

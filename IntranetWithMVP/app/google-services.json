@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "680159250886",
+    "firebase_url": "https://intranetwithmvp.firebaseio.com",
+    "project_id": "intranetwithmvp",
+    "storage_bucket": "intranetwithmvp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:680159250886:android:101e303a78a34a27",
+        "android_client_info": {
+          "package_name": "com.example.acer.intranetwithmvp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "680159250886-iiuchicdmc2ld31ts4r3or9rjv4j44v4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.acer.intranetwithmvp",
+            "certificate_hash": "7bc20d23120b567418fee12376ebff7ffb37923c"
+          }
+        },
+        {
+          "client_id": "680159250886-vpbr0rhh2vu399u6vuem3j9ejpij6bnf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC18su5RnRKqPyTvboHl7B4bvEDNj1HTHU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "680159250886-vpbr0rhh2vu399u6vuem3j9ejpij6bnf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, BloothPrinterActivity!</string>
+    <string name="app_name">MobilePrinter_BT</string>
+    <string name="connect_bluetooth_device_btn">connect a bluetooth device</string>
+    <string name="connect_to_ip_btn">connect to IP</string>
+    <string name="print_content_hint_edt">please input the print content!</string>
+    <string name="checkbox_beikuan">Width</string>
+    <string name="checkbox_underline">Underline</string>
+    <string name="checkbox_bold">Bold</string>
+    <string name="checkbox_height">Height</string>
+    <string name="checkbox_minifont">Minifont</string>
+    <string name="checkbox_hightlight">Hightlight</string>
+    <string name="print_btn">print</string>
+    <string name="test_btn">test</string>
+    <string name="option_btn">Print Option</string>
+    <string name="quit_btn">Quit</string>
+    <string name="back_btn">Back</string>
+    <string name="print_table_btn">Print table</string>
+    <string name="print_smallticket_btn">Print Small Ticket</string>
+    <string name="print_barcode_btn">Print Barcode</string>
+    <string name="barcode_content_edt">Most can only enter 16 characters!</string>
+    <string name="print_image_btn">Print Image</string>
+    <string name="print_text_btn">Print Text</string>
+    <string name="print_option">Print Option</string>
+    <string name="search_bluetooth_device_btn">Search Bluetooth Device</string>
+    <string name="bluetooth_listactivity_title">Please select a device to connect</string>
+    <string name="bluetooth_connect_fail">Bluetooth Device Connect Failed!</string>
+    <string name="bluetooth_connect_sucess">Congratulations, successfully connect to Bluetooth devices:</string>
+    <string name="wifi_connect_fail">WIFI Connect Failed!</string>
+    <string name="wifi_connect_sucess">Congratulations, successfully connect to WIFI</string>
+    <string name="bluetooth_unconnected">Not Connected!</string>
+    <string name="bluetooth_open_hint">Bluetooth not open,please open bluetooth!</string>
+    <string name="bluetooth_address_invidate_hint">Bluetooth address invalidate,please check!</string>
+    <string name="barcode_input_hint">please input 0~9 character!</string>
+    <string name="no_bluetooth_device_hint">No bluetooth device!</string>
+    <string name="no_start_bluetooth_hint">No start bluetooth!</string>
+    <string name="bluetooth_address_invalid_hint">Bluetooth Address invalid!</string>
+    <string name="bluetooth_address_err_hint">Bluetooth Address Err!</string>
+    <string name="start_bluetooth_err_hint">Start Bluetooth Err!</string>
+    <string name="is_close_local_bluetooth_hint">Is Close Local Bluetooth?</string>
+    <string name="yes_hint">Yes</string>
+    <string name="no_hint">No</string>
+    <string name="close_bluetooth_err_hint">close bluetooth err!</string>
+    <string name="bluetooth_status_matched_hint">matched</string>
+    <string name="bluetooth_status_unmatched_hint">unmatched</string>
+    <string name="connecting_bluetooth_device_hint">Connecting Bluetooth Device...</string>
+    <string name="please_wait_hint">Please Wait...</string>
+    <string name="get_bluetooth_device_err_hint">Get Bluetooth device err!</string>
+    <string name="search_bluetooth_device_err_hint">Search Bluetooth device err!</string>
+    <string name="bluetooth_device_handler_err_hint">Bluetooth device Handler Err!</string>
+    <string name="bluetooth_status_err_hint">Bluetooth Status Err,please restart bluetooth!</string>
+    <string name="bluetooth_close_sucess_hint">Local Bluetooth Close Sucess!</string>
+    <string name="search_printer_hint">Local Bluetooth Open Sucess,please search printer!</string>
+    <string name="search_complete_hint">Bluetooth Device Search Complete!</string>
+    <string name="match_process_fail_hint">Match Process Failed!</string>
+    <string name="connected_device_hint">Connected Device: </string>
+    <string name="bluetooth_connected_cannot_connect">Bluetooth Connected,do not need to reconnect! </string>
+    <string name="unopen_bluetooth_hint">Bluetooth is closed,will you open it or not? </string>
+    <string name="open_bluetooth_err_hint">Open Bluetooth err! </string>
+    
+    <!--  DeviceListActivity -->
+    <string name="scanning">scanning for devices...</string>
+    <string name="select_device">select a device to connect</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="none_found">No devices found</string>
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Available Devices</string>
+    <string name="button_scan">Scan for devices</string>
+    
+    <!--  打印选项内容    -->
+	<string name="print_text_content">Xiamen Rongta Technology Co.Ltd is a high-tech enterprise established in 2007, manufacturing, selling pos printer, receipt printer, printer mechanism, control board and other POS peripherals! </string>
+
+	<string name="print_smallticket_content1">Check-out sheet </string>
+	<string name="print_smallticket_content2">Serial number: 51 </string>
+	<string name="print_smallticket_content3">Order Number: P13030300056      Cashier:  </string>
+	<string name="print_smallticket_content4">Time: 04-23  15:21 </string>
+	<string name="print_smallticket_content5">Name       Quantity  Price  Sum </string>
+	<string name="print_smallticket_content6">cheese cake  2        10     20 </string>
+	<string name="print_smallticket_content7">apple juice  2        10     20 </string>
+	<string name="print_smallticket_content8">Consumption: 40 </string>
+	<string name="print_smallticket_content9">Receivables: 40 </string>
+	<string name="print_smallticket_content10">Cash: 40 </string>
+	<string name="print_smallticket_content11">Signature: </string>
+    
+    <string name="print_table_content1">"┏━━━┳━━━━┳━┳━━━┓\n"  </string>
+    <string name="print_table_content2">"┃From  ┃Shanghai┃To┃Xiamen┃\n"  </string>
+    <string name="print_table_content3">"┣━━━╋━━┳━┻┳┻━━━┫\n"  </string>
+    <string name="print_table_content4">"┃Amount┃ 1  ┃No. ┃5555555 ┃\n" </string>	
+    <string name="print_table_content5">"┣━━━┻━┳┻━━┻━━━━┫\n"  </string>
+    <string name="print_table_content6">"┃Addressee ┃Sun Jun         ┃\n" </string>
+    <string name="print_table_content7">"┣━━━━━╋━━━━━━━━┫\n"  </string>
+    <string name="print_table_content8">"┃Pickup by ┃                ┃\n" </string>
+    <string name="print_table_content9">"┗━━━━━┻━━━━━━━━┛\n" </string>
+    
+</resources>

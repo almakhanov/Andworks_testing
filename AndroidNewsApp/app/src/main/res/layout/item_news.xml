@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardElevation="4dp"
+    card_view:cardCornerRadius="3dp"
+    xmlns:app="http://schemas.android.com/tools"
+    app:ignore="NamespaceTypo">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:padding="16dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/icon"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            xmlns:app="http://schemas.android.com/apk/res-auto"/>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lorem Ipsum"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:lines="2"
+            android:maxLines="2"
+            android:maxWidth="250dp"
+            android:ellipsize="end"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintLeft_toRightOf="@id/iv"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lorem Ipsum"
+            android:textSize="14sp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintLeft_toRightOf="@id/iv"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>

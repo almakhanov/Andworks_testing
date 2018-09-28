@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <Button android:id="@+id/btn_connect_bluetooth_device"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/connect_bluetooth_device_btn"/>
+    
+<!--  
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <Button android:id="@+id/btn_connect_to_ip"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:text="@string/connect_to_ip_btn"/>
+        <EditText android:id="@+id/edt_ip_address"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            android:text="192.168.1.87:9100"/>
+    </LinearLayout>
+ -->
+ 
+    <EditText android:id="@+id/edt_print_content"
+        android:layout_width="fill_parent"
+        android:layout_height="180dip"
+        android:gravity="top|left"
+        android:hint="@string/print_content_hint_edt"/>
+    <TableLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <CheckBox android:id="@+id/checkbox_beikuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/checkbox_beikuan" />
+            <CheckBox android:id="@+id/checkbox_underline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:layout_marginLeft="10dip"
+                android:text="@string/checkbox_underline" />
+            <CheckBox android:id="@+id/checkbox_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:layout_marginLeft="10dip"
+                android:text="@string/checkbox_bold" />
+        </TableRow>
+        <TableRow>
+            <CheckBox android:id="@+id/checkbox_beigao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/checkbox_height" />
+            <CheckBox android:id="@+id/checkbox_minifont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:layout_marginLeft="10dip"
+                android:text="@string/checkbox_minifont" />
+            <CheckBox android:id="@+id/checkbox_hightlight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:layout_marginLeft="10dip"
+                android:text="@string/checkbox_hightlight" />
+        </TableRow>
+    </TableLayout>
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <Button android:id="@+id/btn_print"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:text="@string/print_btn"/>
+        <Button android:id="@+id/btn_test"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:text="@string/test_btn"/>
+        <Button android:id="@+id/btn_option"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:text="@string/option_btn"/>
+    </LinearLayout>
+    <Button android:id="@+id/btn_quit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:text="@string/quit_btn"/>
+</LinearLayout>

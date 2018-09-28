@@ -1,0 +1,56 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        applicationId "org.sample.koin"
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+        test.java.srcDirs += 'src/test/kotlin'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    // Android Support
+    implementation "com.android.support:appcompat-v7:$supportLibraryVersion"
+    implementation "com.android.support:design:$supportLibraryVersion"
+
+    // Android Test
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    testImplementation "junit:junit:$junit_version"
+    testImplementation "org.mockito:mockito-core:$mockito_version"
+
+    // Kotlin
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+    // Koin
+    implementation "org.koin:koin-android-viewmodel:$koin_version"
+    // scope feature
+//    implementation "org.koin:koin-android-scope:$koin_version"
+    // android features
+//    implementation "org.koin:koin-android:$koin_version"
+    testImplementation "org.koin:koin-test:$koin_version"
+    androidTestImplementation "org.koin:koin-test:$koin_version"
+
+    // ViewModel and LiveData
+    implementation "android.arch.lifecycle:extensions:$androidArchitectureVersion"
+    annotationProcessor "android.arch.lifecycle:compiler:$androidArchitectureVersion"
+    testImplementation "android.arch.core:core-testing:$androidArchitectureVersion"
+}

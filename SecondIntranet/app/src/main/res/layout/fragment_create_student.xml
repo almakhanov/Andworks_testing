@@ -1,0 +1,476 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".fragments.CreateStudentFragment">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbarCreateStudent"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:theme="@style/ThemeOverlay.AppCompat"
+        app:titleTextColor="@color/colorAccent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/scrollStudentForm">
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <ScrollView
+        android:id="@+id/scrollStudentForm"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarCreateStudent"
+        >
+
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:padding="4dp">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/studentNameBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/studentLastNameBox"
+                >
+
+                <ImageView
+                    android:id="@+id/studentNameIcon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="8dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/studentNameInputBox"
+                    android:src="@mipmap/prof" />
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/studentNameInputBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/studentNameIcon">
+
+
+                    <EditText
+                        android:id="@+id/studentNameInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="First Name"
+                        android:layout_margin="8dp"
+                        android:inputType="textPersonName"
+                        android:textSize="16sp"/>
+                </android.support.design.widget.TextInputLayout>
+
+
+            </android.support.constraint.ConstraintLayout>
+
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/studentLastNameBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:layout_constraintTop_toBottomOf="@id/studentNameBox"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/studentTelBox"
+                >
+
+                <ImageView
+                    android:id="@+id/studentLastNameIcon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="8dp"
+                    android:src="@mipmap/prof"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/studentLastNameInputBox"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/studentLastNameInputBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/studentLastNameIcon">
+
+
+                    <EditText
+                        android:id="@+id/studentLastNameInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Last Name"
+                        android:layout_margin="8dp"
+                        android:inputType="textPersonName"
+                        android:textSize="16sp"/>
+                </android.support.design.widget.TextInputLayout>
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/studentTelBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:layout_constraintTop_toBottomOf="@id/studentLastNameBox"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/studentEmailBox"
+                >
+
+                <ImageView
+                    android:id="@+id/studentTelIcon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="8dp"
+                    android:src="@android:drawable/ic_menu_call"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/studentTelInputBox"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/studentTelInputBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/studentTelIcon">
+
+
+                    <EditText
+                        android:id="@+id/studentTelInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Telephone Number"
+                        android:layout_margin="8dp"
+                        android:inputType="phone"
+                        android:textSize="16sp"/>
+                </android.support.design.widget.TextInputLayout>
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/studentEmailBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:layout_constraintTop_toBottomOf="@id/studentTelBox"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/studentBirthdayBox"
+                >
+
+                <ImageView
+                    android:id="@+id/studentEmailIcon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="8dp"
+                    android:src="@android:drawable/ic_dialog_email"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/studentEmailInputBox"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/studentEmailInputBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/studentEmailIcon">
+
+
+                    <EditText
+                        android:id="@+id/studentEmailInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:hint="E-mail"
+                        android:inputType="phone"
+                        android:textSize="16sp"/>
+                </android.support.design.widget.TextInputLayout>
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/studentBirthdayBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:layout_constraintTop_toBottomOf="@id/studentEmailBox"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/studentFacultyBox"
+                >
+
+                <ImageView
+                    android:id="@+id/studentBirthdayIcon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="8dp"
+                    android:src="@android:drawable/ic_menu_my_calendar"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/studentBirthdayInputBox"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/studentBirthdayInputBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/studentBirthdayIcon">
+
+
+                    <TextView
+                        android:id="@+id/studentBirthdayInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:hint="Date of Birth"
+                        android:inputType="date"
+
+                        android:padding="4dp"
+                        android:textSize="16sp" />
+                </android.support.design.widget.TextInputLayout>
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/studentFacultyBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:layout_constraintTop_toBottomOf="@id/studentBirthdayBox"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/studentSpecBox"
+                >
+
+                <ImageView
+                    android:id="@+id/studentFacultyIcon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="8dp"
+                    android:src="@android:drawable/ic_input_get"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/studentFacultyInput"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <Spinner
+                    android:id="@+id/studentFacultyInput"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/studentFacultyIcon"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/studentSpecBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:layout_constraintTop_toBottomOf="@id/studentFacultyBox"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/studentYearOfStudyBox"
+                >
+
+
+                <ImageView
+                    android:id="@+id/studentSpecIcon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="8dp"
+                    android:src="@android:drawable/ic_menu_manage"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/studentSpecInput"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Spinner
+                    android:id="@+id/studentSpecInput"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:textSize="16sp"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/studentSpecIcon"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/studentYearOfStudyBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:layout_constraintTop_toBottomOf="@id/studentSpecBox"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/saveBtnBox">
+
+
+
+                <ImageView
+                    android:id="@+id/studentYearOfStudyIcon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="8dp"
+                    android:src="@android:drawable/ic_menu_myplaces"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/studentYearOfStudyInput"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Spinner
+                    android:id="@+id/studentYearOfStudyInput"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:textSize="16sp"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/studentYearOfStudyIcon"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/saveBtnBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/studentSpecBox"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <Button
+                    android:id="@+id/saveStudentBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:padding="8dp"
+                    android:text="Save"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:background="@drawable/button_background"
+                    android:textStyle="bold"
+                    android:textColor="#FFF"
+                    />
+
+            </android.support.constraint.ConstraintLayout>
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+
+
+
+        <EditText
+    android:id="@+id/nameTxt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:ems="10"
+    android:hint="Name"
+    android:inputType="textPersonName"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+            android:enabled="false" android:visibility="invisible"/>
+
+<EditText
+    android:id="@+id/ageTxt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:ems="10"
+    android:hint="Age"
+    android:inputType="number"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/nameTxt"
+    android:enabled="false" android:visibility="invisible"/>
+
+<EditText
+    android:id="@+id/gpaTxt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:ems="10"
+    android:hint="GPA"
+    android:inputType="numberDecimal"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/ageTxt"
+    android:enabled="false" android:visibility="invisible"/>
+
+<Button
+    android:id="@+id/saveBtn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:text="Save"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/gpaTxt"
+    android:enabled="false" android:visibility="invisible"/>
+
+<!--<TextView-->
+<!--android:id="@+id/textView2"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:layout_marginBottom="8dp"-->
+<!--android:layout_marginEnd="8dp"-->
+<!--android:layout_marginStart="8dp"-->
+<!--android:layout_marginTop="8dp"-->
+<!--android:text="TextView"-->
+<!--app:layout_constraintBottom_toBottomOf="parent"-->
+<!--app:layout_constraintEnd_toEndOf="parent"-->
+<!--app:layout_constraintStart_toStartOf="parent"-->
+<!--app:layout_constraintTop_toBottomOf="@+id/saveBtn" />-->
+
+</android.support.constraint.ConstraintLayout>

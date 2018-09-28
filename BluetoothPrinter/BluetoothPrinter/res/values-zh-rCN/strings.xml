@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">欢迎使用移动打印机程序!</string>
+    <string name="app_name">蓝牙移动打印机</string>
+    <string name="connect_bluetooth_device_btn">连接蓝牙设备</string>
+    <string name="connect_to_ip_btn">连接到IP</string>
+    <string name="print_content_hint_edt">请输入打印内容</string>
+    <string name="checkbox_beikuan">倍宽</string>
+    <string name="checkbox_underline">下划线</string>
+    <string name="checkbox_bold">加粗</string>
+    <string name="checkbox_height">倍高</string>
+    <string name="checkbox_minifont">小字体</string>
+    <string name="checkbox_hightlight">反白</string>
+    <string name="print_btn">打印</string>
+    <string name="test_btn">测试</string>
+    <string name="option_btn">打印选项</string>
+    <string name="quit_btn">退出</string>
+    <string name="back_btn">返回</string>
+    <string name="print_table_btn">打印表格</string>
+    <string name="print_smallticket_btn">打印小票</string>
+    <string name="print_barcode_btn">打印条形码</string>
+    <string name="barcode_content_edt">请最多只能输入16位字符!</string>
+    <string name="print_image_btn">打印图片</string>
+    <string name="print_text_btn">打印文本</string>
+    <string name="print_option">打印选项</string>
+    <string name="search_bluetooth_device_btn">扫瞄蓝牙设备</string>
+    <string name="bluetooth_listactivity_title">请选择设备连接</string>
+    <string name="bluetooth_connect_fail">蓝牙设备连接失败!</string>
+    <string name="bluetooth_connect_sucess">恭喜您,成功地连接到蓝牙设备:</string>
+    <string name="wifi_connect_fail">WIFI 连接失败!</string>
+    <string name="wifi_connect_sucess">恭喜你,成功连接到 WIFI</string>
+    <string name="bluetooth_unconnected">未连接</string>
+     <string name="bluetooth_open_hint">没有打开蓝牙,请打开蓝牙!</string>
+     <string name="bluetooth_address_invidate_hint">蓝牙地址无效,请检查!</string>
+     <string name="barcode_input_hint">请输入0~9数字字符!</string>
+     <string name="no_bluetooth_device_hint">没有蓝牙设备!</string>
+     <string name="no_start_bluetooth_hint">没有启动蓝牙!</string>
+     <string name="bluetooth_address_invalid_hint">蓝牙设备地址无效!</string>
+     <string name="bluetooth_address_err_hint">蓝牙设备地址出错!</string>
+     <string name="start_bluetooth_err_hint">启动蓝牙出错!</string>
+     <string name="is_close_local_bluetooth_hint">是否关闭本地蓝牙?</string>
+     <string name="yes_hint">是</string>
+    <string name="no_hint">否</string>
+    <string name="close_bluetooth_err_hint">关闭蓝牙出错!</string>
+    <string name="bluetooth_status_matched_hint">已匹配</string>
+    <string name="bluetooth_status_unmatched_hint">未匹配</string>
+    <string name="connecting_bluetooth_device_hint">正在连接蓝牙设备...</string>
+    <string name="please_wait_hint">请稍候...</string>
+    <string name="get_bluetooth_device_err_hint">获取蓝牙设备出错!</string>
+    <string name="search_bluetooth_device_err_hint">搜索蓝牙设备出错!</string>
+    <string name="bluetooth_device_handler_err_hint">蓝牙设备处理出错!</string>
+    <string name="bluetooth_status_err_hint">蓝牙状态出错,请重新启动蓝牙!</string>
+    <string name="bluetooth_close_sucess_hint">本地蓝牙关闭成功!</string>
+    <string name="search_printer_hint">本地蓝牙已打开,请搜索打印机!</string>
+    <string name="search_complete_hint">蓝牙扫瞄完毕!</string>
+    <string name="match_process_fail_hint">匹配过程失败!</string>
+    <string name="connected_device_hint">已连接设备: </string>
+    <string name="bluetooth_connected_cannot_connect">蓝牙已经连接,请不要重新连接! </string>
+    <string name="unopen_bluetooth_hint">未开启蓝牙,是否开启蓝牙？ </string>
+    <string name="open_bluetooth_err_hint">打开蓝牙出错! </string>
+    
+    <!--  DeviceListActivity -->
+    <string name="scanning">扫描设备...</string>
+    <string name="select_device">请选择设备连接</string>
+    <string name="none_paired">没有匹配的设备</string>
+    <string name="none_found">未发现蓝牙设备</string>
+    <string name="title_paired_devices">已配对设备</string>
+    <string name="title_other_devices">其他设备</string>
+    <string name="button_scan">扫描设备</string>
+    
+    <!--  打印选项内容   -->
+    <string name="print_text_content">厦门容大合众电子科技有限公司是一家专业研发、生产、销售POS打印机、票据打印机、打印单元、控制板及POS周边产品的高新技术企业。 </string>
+    
+    <string name="print_smallticket_content1">结账单 </string>
+	<string name="print_smallticket_content2">流水号：51 </string>
+	<string name="print_smallticket_content3">单号：P13030300056   收银员：  </string>
+	<string name="print_smallticket_content4">时间：04-23  15:21 </string>
+	<string name="print_smallticket_content5">品名         数量   价格   金额 </string>
+	<string name="print_smallticket_content6">冬瓜炖鸡汤      1   10.0   10.0 </string>
+	<string name="print_smallticket_content7">芙蓉王          1   50.0   50.0 </string>
+	<string name="print_smallticket_content8">消费:60.00 </string>
+	<string name="print_smallticket_content9">应收:60.00 </string>
+	<string name="print_smallticket_content10">现金:60.00 </string>
+	<string name="print_smallticket_content11">签名: </string>
+	
+    <string name="print_table_content1">"┏━━┳━━━┳━━┳━━━━┓\n"  </string>
+    <string name="print_table_content2">"┃发站┃上 海 ┃到站┃厦门    ┃\n"  </string>
+    <string name="print_table_content3">"┣━━╋━━━╋━━╋━━━━┫\n"  </string>
+    <string name="print_table_content4">"┃件数┃ 1    ┃单号┃5555555 ┃\n" </string>	
+    <string name="print_table_content5">"┣━━┻┳━━┻━━┻━━━━┫\n"  </string>
+    <string name="print_table_content6">"┃收件人┃孙俊                ┃\n" </string>
+    <string name="print_table_content7">"┣━━━╋━━━━━━━━━━┫\n"  </string>
+    <string name="print_table_content8">"┃业务员┃                    ┃\n" </string>
+    <string name="print_table_content9">"┗━━━┻━━━━━━━━━━┛\n" </string>
+</resources>
